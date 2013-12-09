@@ -77,33 +77,91 @@ This is currently broken... need to handle list of items with single parent (lik
             "%1 "
             "GROUP BY a.album_id "
             "ORDER BY a.album_name",
-        "WHERE song.album_id=:KEY" },
-/*
+        "WHERE song.album_id=:KEY"    },
+
 
     {   "By Artist",
-        "artist_id",
-        "SELECT a.artist_id as id, "
+        "song.artist_id",
+        "SELECT "
+          "a.artist_id as id, "
           "a.artist_name as name, "
-          "count( distinct song.artist_id ) as children "
-            "FROM music_songs song join music_artists a on a.artist_id = song.artist_id "
+          "count( distinct name ) as children "
+            "FROM music_songs song JOIN music_artists a ON a.artist_id = song.artist_id "
             "%1 "
             "GROUP BY a.artist_id "
             "ORDER BY a.artist_name",
-        "WHERE song.artist_id=:KEY" },
-*/
-/*
-{   "By Genre",
-        "genre_id",
+        "WHERE song.artist_id=:KEY"
+    },
+
+
+    {  "By Artist (A-F)",
+       "song.artist_id",
+       "SELECT "
+          "a.artist_id as id, "
+          "a.artist_name as name, "
+          "count( distinct name ) as children "
+            "FROM music_songs song JOIN music_artists a ON a.artist_id = song.artist_id "
+            "%1 " 
+            "WHERE a.artist_name REGEXP \'^[0-9A-F].+$\' "
+            "GROUP BY a.artist_id "
+            "ORDER BY a.artist_name ",
+        "WHERE song.artist_id=:KEY "
+    },
+
+    {  "By Artist (G-M)",
+       "song.artist_id",
+          "SELECT "
+             "a.artist_id as id, "
+             "a.artist_name as name, "
+             "count( distinct name ) as children "
+           "FROM "
+             "music_songs song join music_artists a on a.artist_id = song.artist_id "
+           "%1 " 
+           "WHERE a.artist_name REGEXP \'^[G-M].+$\' "
+           "GROUP BY a.artist_id "
+           "ORDER BY a.artist_name ",
+        "WHERE song.artist_id=:KEY "
+    },
+
+    {  "By Artist (N-R)",
+       "song.artist_id",
+       "SELECT "
+          "a.artist_id as id, "
+          "a.artist_name as name, "
+          "count( distinct name ) as children "
+            "FROM music_songs song join music_artists a on a.artist_id = song.artist_id "
+            "%1 " 
+            "WHERE a.artist_name REGEXP \'^[N-S].+$\' "
+            "GROUP BY a.artist_id "
+            "ORDER BY a.artist_name ",
+        "WHERE song.artist_id=:KEY "
+    },
+
+    {  "By Artist (S-Z)",
+       "song.artist_id",
+       "SELECT "
+          "a.artist_id as id, "
+          "a.artist_name as name, "
+          "count( distinct name ) as children "
+            "FROM music_songs song join music_artists a on a.artist_id = song.artist_id "
+            "%1 " 
+            "WHERE a.artist_name REGEXP \'^[T-Z].+$\' OR a.artist_name NOT REGEXP \'^[0-9A-Z].+$\'"
+            "GROUP BY a.artist_id "
+            "ORDER BY a.artist_name ",
+        "WHERE song.artist_id=:KEY "
+    },
+
+    {   "By Genre",
+        "song.genre_id",
         "SELECT g.genre_id as id, "
-          "genre as name, "
-          "count( distinct song.genre_id ) as children "
+          "g.genre as name, "
+          "count( distinct name ) as children "
             "FROM music_songs song join music_genres g on g.genre_id = song.genre_id "
             "%1 "
             "GROUP BY g.genre_id "
             "ORDER BY g.genre",
-        "WHERE song.genre_id=:KEY" },
+        "WHERE song.genre_id=:KEY"    }
 
-*/
 };
 
 int UPnpCDSMusic::g_nRootCount = sizeof( g_RootNodes ) / sizeof( UPnpCDSRootInfo );
@@ -144,10 +202,16 @@ QString UPnpCDSMusic::GetTableName( QString sColumn )
 
 QString UPnpCDSMusic::GetItemListSQL( QString /* sColumn */ )
 {
-    return "SELECT song.song_id as intid, artist.artist_name as artist, "     \
-           "album.album_name as album, song.name as title, "                  \
-           "genre.genre, song.year, song.track as tracknum, "                 \
-           "song.description, song.filename, song.length "                    \
+    return "SELECT song.song_id as intid, " \
+                  "artist.artist_name as artist, " \
+                  "album.album_name as album, " \
+                  "song.name as title, " \
+                  "genre.genre, " \
+                  "song.year, " \
+                  "song.track as tracknum, " \
+                  "song.description, " \
+                  "song.filename, " \
+                  "song.length " \
            "FROM music_songs song "                                           \
            " join music_artists artist on artist.artist_id = song.artist_id " \
            " join music_albums album on album.album_id = song.album_id "      \
