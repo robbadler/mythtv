@@ -99,7 +99,7 @@ This is currently broken... need to handle list of items with single parent (lik
        "SELECT "
           "a.artist_id as id, "
           "a.artist_name as name, "
-          "count( distinct name ) as children "
+          "count( distinct name ) as children WHERE a.artist_name REGEXP \'^[0-9A-F].+$\' "
             "FROM music_songs song JOIN music_artists a ON a.artist_id = song.artist_id "
             "%1 " 
             "WHERE a.artist_name REGEXP \'^[0-9A-F].+$\' "
@@ -326,7 +326,7 @@ void UPnpCDSMusic::AddItem( const UPnpCDSRequest    *pRequest,
     QString        sAlbum       = query.value( 2).toString();
     QString        sTitle       = query.value( 3).toString();
     QString        sGenre       = query.value( 4).toString();
-//    int            nYear        = query.value( 5).toInt();
+    int            nYear        = query.value( 5).toInt();
     int            nTrackNum    = query.value( 6).toInt();
     QString        sDescription = query.value( 7).toString();
     QString        sFileName    = query.value( 8).toString();
