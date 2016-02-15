@@ -1,0 +1,142 @@
+Fri Mar 18 11:06:11 PDT 2011
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --disable-amd3dnow --disable-amd3dnowext --disable-mmx2
+Sun Mar 27 10:34:02 PDT 2011
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --disable-amd3dnow --disable-amd3dnowext --disable-mmx2
+Tue May 17 14:38:43 PDT 2011
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --disable-amd3dnow --disable-amd3dnowext --disable-mmx2
+Tue Jul 19 10:27:34 PDT 2011
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --disable-amd3dnow --disable-amd3dnowext --disable-mmx2
+Mon Sep 19 11:46:49 PDT 2011
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --disable-amd3dnow --disable-amd3dnowext --disable-mmx2
+Tue Dec  6 15:46:10 PST 2011
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --disable-amd3dnow --disable-amd3dnowext --disable-mmx2
+Tue Dec  6 15:59:32 PST 2011
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --disable-amd3dnow --disable-amd3dnowext --disable-mmx2
+Tue Jan 24 17:54:09 PST 2012
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --disable-amd3dnow --disable-amd3dnowext --disable-mmx2
+Tue Jan 31 20:11:53 PST 2012
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --disable-amd3dnow --disable-amd3dnowext --disable-mmx2
+Tue Jan 31 20:16:10 PST 2012
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --disable-amd3dnow --disable-amd3dnowext --disable-mmx2
+Tue Jan 31 20:20:06 PST 2012
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --disable-amd3dnow --disable-amd3dnowext --disable-mmx2
+Tue Jan 31 20:24:05 PST 2012
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --disable-amd3dnow --disable-amd3dnowext --disable-mmx2
+Tue Jan 31 20:25:26 PST 2012
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --disable-amd3dnow --disable-amd3dnowext --disable-mmx2 --with-bindings=perl,python
+Tue Jan 31 20:28:16 PST 2012
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --disable-amd3dnow --disable-amd3dnowext --disable-mmx2 --with-bindings=perl,python
+Tue Jan 31 20:33:41 PST 2012
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --disable-amd3dnow --disable-amd3dnowext --disable-mmx2 --with-bindings=perl,python
+Thu Mar 22 10:29:46 PDT 2012
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt
+Tue Apr 10 10:14:37 PDT 2012
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --with-bindings=perl,python
+   GA
+   --enable-libmp3lamer --enable-libfaac --enable-libx264 --enable-pic --enable-proc-opt --disable-firewire --disable-hdhomerun 
+Thu May 31 10:14:03 PDT 2012
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --with-bindings=perl,python --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-pic --enable-proc-opt --disable-firewire --disable-hdhomerun --enable-nonfree
+Thu May 31 10:15:29 PDT 2012
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --with-bindings=perl,python --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-pic --enable-proc-opt --disable-firewire --disable-hdhomerun --enable-nonfree --enable-libxvid
+Thu May 31 10:46:43 PDT 2012
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --with-bindings=perl,python --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-pic --enable-proc-opt --disable-firewire --disable-hdhomerun --enable-nonfree --enable-libxvid
+Fri Jun  1 21:36:54 PDT 2012
+   ./configure --enable-vdpau --disable-hdhomerun --disable-lirc --disable-audio-oss --disable-audio-jack --prefix=/usr/local --libdir-name=lib64 --enable-proc-opt --with-bindings=perl,python --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-pic --enable-proc-opt --disable-firewire --disable-hdhomerun --enable-nonfree --enable-libxvid
+Sun Jun  3 09:02:36 PDT 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --disable-audio-oss --disable-audio-jack --disable-lirc --disable-joystick-menu --disable-firewire --disable-hdhomerun --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Tue Jun  5 20:04:33 PDT 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --disable-audio-oss --disable-audio-jack --disable-lirc --disable-joystick-menu --disable-firewire --disable-hdhomerun --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Thu Oct 18 17:09:33 PDT 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --disable-audio-oss --disable-audio-jack --disable-lirc --disable-joystick-menu --disable-firewire --disable-hdhomerun --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Thu Oct 18 17:11:31 PDT 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --disable-audio-oss --disable-audio-jack --disable-lirc --disable-joystick-menu --disable-firewire --disable-hdhomerun --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Thu Oct 18 17:14:46 PDT 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --disable-audio-oss --disable-audio-jack --disable-lirc --disable-joystick-menu --disable-firewire --disable-hdhomerun --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Thu Oct 18 17:16:35 PDT 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --disable-audio-oss --disable-audio-jack --disable-lirc --disable-joystick-menu --disable-firewire --disable-hdhomerun --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Thu Oct 18 17:18:23 PDT 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --disable-audio-oss --disable-audio-jack --disable-lirc --disable-joystick-menu --disable-firewire --disable-hdhomerun --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Thu Oct 18 17:20:12 PDT 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --disable-audio-oss --disable-audio-jack --disable-lirc --disable-joystick-menu --disable-firewire --disable-hdhomerun --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Thu Oct 18 21:54:58 PDT 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --disable-audio-oss --disable-audio-jack --disable-lirc --disable-joystick-menu --disable-firewire --disable-hdhomerun --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Thu Dec 13 11:10:16 PST 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --disable-audio-oss --disable-audio-jack --disable-lirc --disable-joystick-menu --disable-firewire --disable-hdhomerun --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Thu Dec 13 11:33:40 PST 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Thu Dec 13 11:37:51 PST 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Wed Dec 26 13:44:16 PST 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Thu Dec 27 18:32:07 PST 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Thu Dec 27 18:34:00 PST 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Mon Dec 31 00:09:18 PST 2012
+   ./configure --prefix=/usr/local --libdir-name=/usr/local/lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Mon Dec 31 00:10:50 PST 2012
+   ./configure --prefix=/usr/local --libdir-name=/usr/local/lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Mon Dec 31 00:28:39 PST 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Mon Dec 31 13:36:04 PST 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Mon Dec 31 14:03:22 PST 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Mon Dec 31 14:11:40 PST 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Mon Dec 31 15:34:35 PST 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Mon Dec 31 15:42:25 PST 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Mon Dec 31 15:43:06 PST 2012
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Wed Feb 27 14:37:25 PST 2013
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Sat Feb 15 18:56:30 PST 2014
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Sat Feb 15 19:00:43 PST 2014
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Thu Apr 10 11:47:19 PDT 2014
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Thu Apr 10 12:51:55 PDT 2014
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Sat Jan 17 11:56:04 PST 2015
+   ./configure --prefix=/home/vld/local --enable-sdl --enable-libxvid --enable-libx264 --enable-libfaac --enable-libmp3lame --with-bindings=perl,python,php --disable-vdpau --disable-dxva2 --disable-opengl-video --disable-quartz-video --enable-nonfree
+Sat Jan 17 12:05:27 PST 2015
+   ./configure --prefix=/home/vld/local --enable-sdl --enable-libxvid --enable-libx264 --enable-libfaac --enable-libmp3lame --with-bindings=perl,python,php --disable-vdpau --disable-dxva2 --disable-opengl-video --disable-quartz-video --enable-nonfree
+Sat Jan 17 12:18:40 PST 2015
+   ./configure --prefix=/home/vld/local --enable-sdl --enable-libxvid --enable-libx264 --enable-libfaac --enable-libmp3lame --with-bindings=perl,python,php --disable-vdpau --disable-dxva2 --disable-opengl-video --disable-quartz-video --enable-nonfree
+Sat Jan 17 12:30:43 PST 2015
+   ./configure --prefix=/home/vld/local --enable-sdl --enable-libxvid --enable-libx264 --enable-libfaac --enable-libmp3lame --with-bindings=perl,python,php --disable-vdpau --disable-dxva2 --disable-opengl-video --disable-quartz-video --enable-nonfree
+Sat Jan 17 12:48:27 PST 2015
+   ./configure --prefix=/home/vld/local --enable-sdl --enable-libxvid --enable-libx264 --enable-libfaac --enable-libmp3lame --with-bindings=perl,python,php --disable-vdpau --disable-dxva2 --disable-opengl-video --disable-quartz-video --enable-nonfree
+Sun Jan 18 00:20:47 PST 2015
+   ./configure --prefix=/home/vld/local --enable-sdl --enable-libxvid --enable-libx264 --enable-libfaac --enable-libmp3lame --with-bindings=perl,python,php --disable-vdpau --disable-dxva2 --disable-opengl-video --disable-quartz-video --enable-nonfree
+Sun Jan 18 19:18:47 PST 2015
+   ./configure --prefix=/home/vld/local --enable-sdl --enable-libxvid --enable-libx264 --enable-libfaac --enable-libmp3lame --with-bindings=perl,python,php --disable-vdpau --disable-dxva2 --disable-opengl-video --disable-quartz-video --enable-nonfree
+Thu Jul  2 09:20:36 PDT 2015
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Mon Nov  2 22:16:44 PST 2015
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Mon Nov  2 22:23:46 PST 2015
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Mon Nov  2 22:26:09 PST 2015
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Mon Nov  2 22:29:10 PST 2015
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Mon Nov  2 22:48:45 PST 2015
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Mon Nov  2 22:50:49 PST 2015
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Tue Nov  3 08:21:19 PST 2015
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx --disable-v4l
+Sat Dec  5 10:38:35 PST 2015
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx --disable-v4l
+Sat Dec  5 10:56:45 PST 2015
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx --disable-v4l
+Sat Dec  5 11:01:10 PST 2015
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx --disable-v4l
+Sat Dec  5 11:12:43 PST 2015
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx --disable-v4l
+Sat Dec  5 11:16:25 PST 2015
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libxvid --enable-libvpx --disable-v4l
