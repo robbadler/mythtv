@@ -96,15 +96,16 @@ This is currently broken... need to handle list of items with single parent (lik
 
     {  "By Artist (A-F)",
        "song.artist_id",
-       "SELECT "
-          "a.artist_id as id, "
-          "a.artist_name as name, "
-          "count( distinct name ) as children WHERE a.artist_name REGEXP \'^[0-9A-F].+$\' "
-            "FROM music_songs song JOIN music_artists a ON a.artist_id = song.artist_id "
-            "%1 " 
-            "WHERE a.artist_name REGEXP \'^[0-9A-F].+$\' "
-            "GROUP BY a.artist_id "
-            "ORDER BY a.artist_name ",
+          "SELECT "
+             "a.artist_id as id, "
+             "a.artist_name as name, "
+             "count( distinct name ) as children "
+           "FROM "
+              "music_songs song JOIN music_artists a ON a.artist_id = song.artist_id "
+           "%1 " 
+           "WHERE a.artist_name REGEXP \'^[0-9A-F].+$\' "
+           "GROUP BY a.artist_id "
+           "ORDER BY a.artist_name ",
         "WHERE song.artist_id=:KEY "
     },
 

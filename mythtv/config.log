@@ -140,3 +140,9 @@ Sat Dec  5 11:12:43 PST 2015
    ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx --disable-v4l
 Sat Dec  5 11:16:25 PST 2015
    ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libxvid --enable-libvpx --disable-v4l
+Sun Feb 14 18:33:38 PST 2016
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx --disable-v4l
+Sun Feb 14 18:35:43 PST 2016
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx --disable-v4l
+Sun Feb 14 18:42:42 PST 2016
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
