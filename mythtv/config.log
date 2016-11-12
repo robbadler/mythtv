@@ -146,3 +146,19 @@ Sun Feb 14 18:35:43 PST 2016
    ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx --disable-v4l
 Sun Feb 14 18:42:42 PST 2016
    ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Tue Aug 16 14:17:53 PDT 2016
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx
+Mon Aug 22 10:21:20 PDT 2016
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx --compile-type=debug
+Mon Aug 22 16:45:07 PDT 2016
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx --compile-type=debug --extra-cflags=-I/usr/local/include --extra-ldflags=-L/usr/local/lib -L/usr/local/lib64 --enable-symbol-visibility
+Mon Aug 22 16:50:17 PDT 2016
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx --compile-type=debug --extra-cflags=-I/usr/local/include --extra-ldflags=-L/usr/local/lib -L/usr/local/lib64 --enable-symbol-visibility
+Mon Aug 22 17:00:41 PDT 2016
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx --compile-type=debug --extra-cflags=-I/usr/local/include --extra-ldflags=-L/usr/local/lib -L/usr/local/lib64 --enable-symbol-visibility
+Tue Aug 23 16:26:53 PDT 2016
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx --compile-type=debug --extra-cflags=-g -I/usr/local/include --extra-cxxflags=-g --extra-ldflags=-L/usr/local/lib -L/usr/local/lib64 --enable-symbol-visibility
+Tue Aug 23 17:04:12 PDT 2016
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx --compile-type=debug --extra-cflags=-g -I/usr/local/include --extra-cxxflags=-g --extra-ldflags=-L/usr/local/lib -L/usr/local/lib64 --enable-symbol-visibility
+Tue Aug 23 17:09:12 PDT 2016
+   ./configure --prefix=/usr/local --libdir-name=lib64 --enable-pic --enable-proc-opt --enable-nonfree --enable-vdpau --enable-vaapi --enable-libmp3lame --enable-libfaac --enable-libx264 --enable-libxvid --enable-libvpx --compile-type=debug --extra-cflags=-g -I/usr/local/include --extra-cxxflags=-g --extra-ldflags=-L/usr/local/lib -L/usr/local/lib64 --enable-symbol-visibility
