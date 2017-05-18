@@ -120,8 +120,8 @@ QString DLNAProfileName(const QString &mimeType, const QSize &resolution,
     // information in the database for each file and can determine this
     // stuff 'properly'
     QString sCountryCode = gCoreContext->GetLocale()->GetCountryCode();
-    bool isNorthAmerica = (sCountryCode == "us" || sCountryCode == "ca" ||
-                            sCountryCode == "mx"); // North America (NTSC/ATSC)
+    bool isNorthAmerica = (sCountryCode.toLower() == "us" || sCountryCode.toLower() == "ca" ||
+                            sCountryCode.toLower() == "mx"); // North America (NTSC/ATSC)
 
     if (container == "MPEG2-PS")
     {
@@ -199,7 +199,7 @@ QString DLNAProfileName(const QString &mimeType, const QSize &resolution,
     }
     else if (mimeType == "audio/mpeg")
     {
-        sProfileName = "MP3X";
+        sProfileName = "MP3";
     }
     else if (mimeType == "audio/x-ms-wma")
     {
