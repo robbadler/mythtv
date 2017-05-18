@@ -1069,10 +1069,10 @@ QString UPnpCDSExtension::CreateIDString(const QString &requestId,
 
     // For metadata requests the request ID will be the ID of the result, so
     // we don't need to do anything
-    if (currentName == name.toLower() && !currentValue.isEmpty() &&
-        currentValue == value.toLower())
+    if (currentName.toLower() == name.toLower() && !currentValue.isEmpty() &&
+        currentValue.toLower() == value.toLower())
         return requestId;
-    else if (currentName == name.toLower() && currentValue.isEmpty())
+    else if (currentName.toLower() == name.toLower() && currentValue.isEmpty())
         return QString("%1=%2").arg(requestId).arg(value);
     else
         return QString("%1/%2=%3").arg(requestId).arg(name).arg(value);
