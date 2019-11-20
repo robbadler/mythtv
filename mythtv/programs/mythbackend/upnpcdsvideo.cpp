@@ -663,9 +663,17 @@ bool UPnpCDSVideo::LoadVideos(const UPnpCDSRequest* pRequest,
         // Convert from minutes to milliseconds
         nLength = (nLength * 60 *1000);
 
+        // RCDH: Season/Episode!!
         int            nSeason      = query.value(10).toInt();
         int            nEpisode     = query.value(11).toInt();
+        QString        sSsnEp       = "";
+        if (nSeason > 0 && nEpisode > 0)
+        {
+            sSsnEp = "S"+ query.value(10).toString() +
+                     "E" + query.value(11).toString();
+        }
         QString        sCoverArt    = query.value(12).toString();
+        // RCDH: fix date here, since ps3 can't?
         QDateTime      dtInsertDate =
             MythDate::as_utc(query.value(13).toDateTime());
         QString        sHostName    = query.value(14).toString();
@@ -739,11 +747,19 @@ bool UPnpCDSVideo::LoadVideos(const UPnpCDSRequest* pRequest,
                                                 sName,
                                                 pRequest->m_sParentId );
         }
-
+        QString sDesc;
+        if (!sSsnEp.isEmpty()) {
+            sDesc += sSsnEp;
+        }
         if (!sSubtitle.isEmpty())
-            pItem->SetPropValue( "description", sSubtitle );
+        {
+            sDesc += (sDesc.isEmpty() ? ":" : "") + sSubtitle;
+        }
         else
-            pItem->SetPropValue( "description", sPlot.left(128).append(" ..."));
+        {
+            sDesc += sPlot.left(128).append(" ...");
+        }
+        pItem->SetPropValue( "description", sDesc );
         pItem->SetPropValue( "longDescription", sPlot );
         pItem->SetPropValue( "director"       , sDirector );
 
