@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+name=mythslave
+
+
+docker run -d \
+  --rm \
+  --hostname=${name} \
+  --name=${name} \
+  -v /media:/media \
+  --publish-all=true \
+  mythslave:test
+
+#  -p 5901:5901 \
+#  --net=host \
+
+  #-v ${HOME}/.Xauthority:/home/mythtv/.Xauthority \
+
+#docker exec mythslave service ssh start
+#docker exec -e USER=mythtv -u mythtv mythslave vncserver -localhost no -geometry 1024x768 :1
+
+#  -v /var/lib/mythtv/.mythtv/config.xml:/home/mythtv/.mythtv/config.xml:ro \
