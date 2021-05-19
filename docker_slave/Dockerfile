@@ -1,18 +1,76 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
-RUN apt-get update \
-  && apt-get install -y --no-install-recommends \
-     software-properties-common 
 
 ARG MYTHTV_VERSION
-RUN add-apt-repository ppa:mythbuntu/${MYTHTV_VERSION}
+ENV APACHE_LOG_DIR=/var/log/apache2 \
+    DEBIAN_FRONTEND=noninteractive \
+    LANG=en_US.UTF-8 \
+    LANGUAGE=en_US.UTF-8 \
+    LC_ALL=en_US.UTF-8 \
+    LD_LIBRARY_PATH=/usr/local/lib \
+    TZ=UTC
 
+ARG SSH_PORT=2022
+ARG MYTHWEB_PORT=6760
 
-RUN apt-get update \
+#RUN apt-get update \
+#  && apt-get install -y --no-install-recommends \
+#     software-properties-common
+ 
+RUN  echo "export LANG=$LANG" >> /etc/environment \
+  && echo "export LANGUAGE=$LANGUAGE >> /etc/environment \
+  && echo "export LC_ALL=$LC_ALL >> /etc/environment \
+  && echo "export TZ=$TZ >> /etc/environment \
+  && echo "export APACHE_LOG_DIR=$APACHE_LOG_DIR >> /etc/environment \
+  && apt-get -yq update \
   && apt-get install -y --no-install-recommends \
-     mythtv-backend
-
-RUN OLD_UID=$(id -u mythtv) \
+    gnupg locales software-properties-common wget \
+  && add-apt-repository ppa:mythbuntu/${MYTHTV_VERSION} \
+  && add-apt-repository ppa:x2go/stable \
+  && apt-get -yq update \
+  && locale-gen $LANG \
+  && apt-get install -y --no-install-recommends \
+    apache2 \
+    curl \
+    hdhomerun-config \
+    libhdhomerun-dev \
+    iproute2 \
+    iputils-ping \
+    less \
+    libmyth-python \
+    lsb-release \
+    mariadb-client \
+    mythtv-backend \
+    mythtv-common \
+    mythtv-transcode-utils \
+    mythweb \
+    net-tools \
+    openssh-client \
+    openssh-server \
+    php-mythtv \
+    psmisc \
+    sudo \
+    tzdata \
+    v4l-utils \
+    vim \
+    w3m \
+    x11-utils \
+    x2goserver-xsession \
+    xauth \
+    xmltv \
+    xterm \
+  && apt-get install -y --no-install-recommends \
+    make g++ \
+  && cd /tmp/ \
+  && wget http://download.silicondust.com/hdhomerun/libhdhomerun_20201023.tgz \
+  && tar -zxvf libhd*.tgz && rm libhd*.tgz \
+  && cd libhd* \
+  && make \
+  && cp libhdhomerun.so /usr/local/lib/libhdhomerun.so.4 \
+  && cp hdhomerun_config /usr/local/bin/ \
+  && apt-get remove -y make g++ && echo && echo maybe run apt autoremove && echo && echo \
+  && rm -rf /var/lib/apt/lists/* \
+  && OLD_UID=$(id -u mythtv) \
   && echo $OLD_UID \
   && OLD_GID=$(id -g mythtv) \
   && usermod -u 1002 mythtv \
@@ -21,67 +79,49 @@ RUN OLD_UID=$(id -u mythtv) \
   && find /home/mythtv -user $OLD_UID -exec chown -h mythtv {} \;
 
 
-RUN ln -s -f /etc/mythtv/config.xml \
-             /home/mythtv/.mythtv/config.xml
 
+COPY src/ /root/
 
-RUN apt-get install -y --no-install-recommends \
-    locales \
-  && locale-gen en_US.UTF-8
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US:en
-ENV LC_ALL en_US.UTF-8
-
-RUN apt-get install -y --no-install-recommends \
-    iproute2
-
-RUN apt-get install -y --no-install-recommends \
-    iputils-ping
-
-ARG SSH_PORT=2022
-
-RUN apt-get install -y --no-install-recommends \
-    mariadb-client \
-    openssh-server \
-    openssh-client
-
-RUN sed -i -e "s/Port 22/Port $SSH_PORT/" /etc/ssh/sshd_config \
-  &&  echo "mythtv:mythtv" | chpasswd
-
-
-RUN apt-get install -y --no-install-recommends \
-    x11-utils xauth x11-apps
-
-RUN apt-get install -y --no-install-recommends \
-    vim
-
-RUN usermod \
+  #&& echo "root:Docker!" | chpasswd 
+RUN sed -i -e "s/\#\?Port 22/Port $SSH_PORT/" /etc/ssh/sshd_config \
+  && sed -i -e "s/Listen 80/Listen $MYTHWEB_PORT/" /etc/apache2/ports.conf \
+  && echo "mythtv:mythtv" | chpasswd \
+  && mv /root/mythweb.conf /root/mythweb-settings.conf \
+    /etc/apache2/sites-available/ \
+  && usermod \
     --shell /bin/bash \
     -a -G users,mythtv,adm,sudo \
-    mythtv
-
-RUN echo "root:Docker!" | chpasswd
-
-ENV DEBIAN_FRONTEND noninteractive
-
-RUN add-apt-repository ppa:x2go/stable \
-  && apt-get update -y \
-  && apt-get install -y x2goserver-xsession
-RUN set -i "s/PermitRootLogin.*/PermitRootLogin yes/g" /etc/ssh/sshd_config \
-  && mkdir -p /tmp/.X11-unix && chmod 1777 /tmp/.X11-unix \
-  && mkdir -p /var/run/dbus
-
-
-EXPOSE $SSH_PORT 5000/udp 6543 6544 6522 3306 5901
-COPY entrypoint.sh /root/entrypoint.sh
-
-RUN chown -R mythtv /var/log/mythtv
-RUN rm /home/mythtv/.mythtv/config.xml
-
-RUN mkdir -p /usr/local/bin \
+    mythtv \
+  && chown -R mythtv /var/log/mythtv \
+  && rm /home/mythtv/.mythtv/config.xml \
+  && mkdir -p /usr/local/bin \
   && for f in /usr/bin/myth* ; do \
-     ln -s $f /usr/local/bin/ ;\
-     done
+       ln -s $f /usr/local/bin/ ;\
+     done \
+  && cat /etc/apache2/ports.conf
 
-#USER mythtv
+
+#RUN set -i "s/PermitRootLogin.*/PermitRootLogin yes/g" /etc/ssh/sshd_config \
+#  && mkdir -p /tmp/.X11-unix && chmod 1777 /tmp/.X11-unix \
+#  && mkdir -p /var/run/dbus
+
+EXPOSE \
+  $MYTHWEB_PORT \
+  $SSH_PORT \
+  3306 \
+  5000/udp \
+  5000/udp \
+  5002/udp \
+  5004/udp \
+  5901 \
+  6543 \
+  6543 \
+  6544 \
+  6544 \
+  6549 \
+  65001 \
+  65001/udp 
+
+VOLUME $APACHE_LOG_DIR
 ENTRYPOINT ["/root/entrypoint.sh"]
+
